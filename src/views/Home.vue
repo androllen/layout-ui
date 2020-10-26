@@ -1,5 +1,5 @@
 <template>
-  <el-container id="shell">
+  <div class="el-box" id="shell">
     <div class="el-nav" id="shell">
       <div class="logo">
         <el-input v-model="input" placeholder="请输入内容"></el-input>
@@ -235,7 +235,7 @@
       </div>
       <div class="logger">33</div>
     </div>
-  </el-container>
+  </div>
 </template>
 
 <script>
@@ -281,6 +281,11 @@ export default {
 </script>
 
 <style>
+.el-box {
+  overflow: hidden;
+  display: flex;
+}
+
 .title {
   background-color: #333;
   height: 60px;
@@ -300,6 +305,7 @@ export default {
   display: flex;
   flex-direction: column;
   width: 100%;
+  flex: auto;
 }
 
 .el-aside {
@@ -313,6 +319,7 @@ export default {
   display: flex;
   flex-direction: column;
   width: 250px;
+  flex: none;
 }
 .logo {
   background: #1f3359;
@@ -343,7 +350,12 @@ export default {
 }
 
 .nui-scroll {
-  border: 1px solid #000;
+  border-style: solid;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: #000;
   width: auto;
   overflow: auto;
 }

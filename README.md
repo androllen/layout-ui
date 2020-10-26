@@ -1,5 +1,7 @@
 # layout-ui
 
+![](https://files.cnblogs.com/files/luquanmingren/logo.gif)
+
 ## Project setup
 ```
 yarn install
@@ -7,12 +9,12 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn electron:serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+yarn electron:build
 ```
 
 ### Customize configuration
